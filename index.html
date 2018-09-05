@@ -9,8 +9,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </head>
-<body onload = "printBtn();" id = "body">
-    <h1 id = "header">Get ya gifs here!</h1>
-    <div class = "container"></div>
+<body>
+        <body id="bowOnTop">
+
+                <div class="jumbotron" id="head">
+                  <h1>Git Giphy with it!</h1>
+                  <h4>Click the buttons or search a topic to display GIPHYs of anything you want<br> or one of the premade buttons on the page!<br>Click the GIPHYs to pause<br></h4>
+                </div>
+                
+                <form class="form-inline" id="giphySearch">
+                  <div class="form-group">
+                    <label for="topicInput">Search for your favorite gifs</label>
+                    <input type="text" id="topicInput">
+                  </div>
+                  <!-- Button triggers show to be added -->
+                  <input id="addshow" type="submit" value="submit">
+                </form>
+                
+                <div class="row">
+                  <div class="container">
+                    <div class="btn-group inline pull-left">
+                      <button class="btn btn-primary" id="show" data-search="Airplanes">Airplanes</button>
+                      <button class="btn btn-primary" id="show" data-search="Corgis">Corgis</button>
+                      <button class="btn btn-primary" id="show" data-search="Motorcycles">Motorcycles</button>
+                      <button class="btn btn-primary" id="show" data-search="Hockey">Hockey</button>
+                      <button class="btn btn-primary" id="show" data-search="LetterKenny">LetterKenny</button>
+                      <div id="myButtons"></div>
+                    </div> <!--end of button group -->
+                  </div> <!--end of container -->
+                </div> <!--end of row -->
+                
+                
+                <div class="row">
+                  <div class="container">
+                      <span><div id="gifDisplay"></div></span>
+                  </div> <!--end of container -->
+                </div> <!-- end of row  -->
 </body>
 </html>
